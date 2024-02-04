@@ -187,9 +187,9 @@ SCLTimerDisplay *buttonTimer;
     _titleFontFamily = @"HelveticaNeue";
     _bodyTextFontFamily = @"HelveticaNeue";
     _buttonsFontFamily = @"HelveticaNeue-Bold";
-    _titleFontSize = 20.0f;
-    _bodyFontSize = 14.0f;
-    _buttonsFontSize = 14.0f;
+    _titleFontSize = 24.0f;
+    _bodyFontSize = 16.0f;
+    _buttonsFontSize = 16.0f;
     
     // Init
     _labelTitle = [[UILabel alloc] init];
@@ -255,9 +255,9 @@ SCLTimerDisplay *buttonTimer;
     [_contentView addSubview:_labelTitle];
     
     // Colors
-    self.backgroundViewColor = [UIColor whiteColor];
-    _labelTitle.textColor = UIColorFromHEX(0x4D4D4D); //Dark Grey
-    _viewText.textColor = UIColorFromHEX(0x4D4D4D); //Dark Grey
+    self.backgroundViewColor = [UIColor colorNamed:@"MainThemeBGColor"]; //Own Asset Color
+    _labelTitle.textColor = [UIColor colorNamed:@"MainThemeFGColor"]; //Own Asset Color
+    _viewText.textColor = [UIColor colorNamed:@"MainThemeFGColor"]; //Own Asset Color
     _contentView.layer.borderColor = UIColorFromHEX(0xCCCCCC).CGColor; //Light Grey
 }
 
